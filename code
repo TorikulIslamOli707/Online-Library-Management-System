@@ -1,0 +1,33 @@
+<?php
+    
+    
+    $sql = "SELECT * FROM signup1 where id=";
+    $result = $connect->query($sql);
+    if($result->num_rows > 0){
+      while($row = $result->fetch_assoc()) {
+      echo "<tr>
+      <td>".$row['name']." </td>
+      </tr>";
+    }
+    }
+    
+   ?>
+
+
+   <?php 
+        if(isset($_POST['submit'])){
+            $idd=$_POST['lid'];
+            $pass=$_POST['lpassword'];
+            $_SESSION['lid']=$pass;
+            $count=0;
+            $sql=mysqli_query($connect,"select * from signup1 where id= '$id' and password='$pass';");
+            $count=mysqli_num_rows($sql); 
+            
+            if($count==1){
+                session_start();
+                
+            }else{
+                  
+            }   
+        }
+    ?>

@@ -1,0 +1,552 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/*******************signup*********************/
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #2e354f;
+}
+
+header h3 {
+    width: 50% fit-content;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    float: left;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    float: right;
+    word-spacing: 30px;
+    padding: 20px;
+}
+
+li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+nav li {
+    margin-top: 60px;
+    display: inline-block;
+}
+
+section {
+    width: 100%;
+    background: white;
+    height: 820px;
+}
+
+.box1 {
+    background: white;
+    display: flex;
+    width: 100%;
+    height: 820px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    background: white;
+    display: flex;
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+section .box1 .formbx h2 {
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid green;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+section .box1 .formbx .inputBx {
+    margin-bottom: 20px;
+}
+
+section .box1 .formbx .inputBx span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607db8;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+section .box1 .formbx .inputBx input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+
+section .box1 .formbx .inputBx input[type="submit"] {
+    background: green;
+    color: #000;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+section .box1 .formbx .remember {
+    margin-bottom: 10px;
+}
+
+section .box1 .formbx .inputBx input[type="submit"]:hover {
+    background: green;
+}
+
+section .box1 .formbx .inputBx p {
+    color: #607d8b;
+}
+
+section .box1 .formbx .inputBx p a {
+    color: green;
+}
+
+footer {
+    width: 100%;
+    background-color: #2e354f;
+}
+
+p .pcheck {
+    color: green;
+    display: block;
+}
+
+
+/***select*/
+
+section .box1 .formbx .inputBx select {
+    width: 195%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+
+
+/*addbooks*/
+
+section .box1 .formbx .inputBx1 {
+    margin-bottom: 20px;
+}
+
+section .box1 .formbx .inputBx1 span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607db8;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+section .box1 .formbx .inputBx1 select {
+    width: 168%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+
+section .box1 .formbx .inputBx4 {
+    margin-bottom: 20px;
+}
+
+section .box1 .formbx .inputBx4 a {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607db8;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+}
+
+section .box1 .formbx .inputBx4 select {
+    width: 168%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #0cf50c;
+    background: transparent;
+    border-radius: 30px;
+}
+
+
+/********************nav**/
+
+
+/* Style the navigation menu */
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+
+/* Navigation links */
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%;
+    /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
+    /* If you want the text to be centered */
+}
+
+
+/* Add a background color on mouse-over */
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+
+/* Style the current/active link */
+
+.navbar a.active {
+    background-color: #4CAF50;
+}
+
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+        /* If you want the text to be left-aligned on small screens */
+    }
+}
+
+
+/****************student dashboard***********/
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbarsd {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+
+/* Navigation links */
+
+.navbarsd a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 33.333333333333%;
+    /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
+    /* If you want the text to be centered */
+}
+
+
+/* Add a background color on mouse-over */
+
+.navbarsd a:hover {
+    background-color: #000;
+}
+
+
+/* Style the current/active link */
+
+.navbarsd a.active {
+    background-color: #4CAF50;
+}
+
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+
+@media screen and (max-width: 500px) {
+    .navbarsd a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+        /* If you want the text to be left-aligned on small screens */
+    }
+}
+
+
+/*****************borrow book************/
+
+.borrow p {
+    font-size: 30px;
+    float: right;
+}
+
+body {
+    background: white;
+}
+
+
+/*******************table*****************/
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
